@@ -53,7 +53,7 @@ async def checkfornewnotes():
     if notes_act != cmb_note():
         print("oui")
         notes_act += 1
-        await bot.get_channel(887660675600621591).send(msg)
+        await bot.get_channel().send(msg)
     else:
         print("non")
 
