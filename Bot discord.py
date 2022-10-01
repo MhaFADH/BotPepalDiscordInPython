@@ -6,6 +6,7 @@ from discord.ext import tasks, commands
 
 bot = discord.Client()
 
+# test*
 
 def cmb_note():
     identifiants = {'login':'','pass':''}
