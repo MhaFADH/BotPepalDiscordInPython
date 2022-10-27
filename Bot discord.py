@@ -11,13 +11,13 @@ bot = discord.Client()
 def cmb_note():
     identifiants = {'login':'','pass':''}
 
-    login_url= 'https://www.pepal.eu/include/php/ident.php'
+    login_url= 'ident page'
 
     session = requests.Session()
 
     login = session.post(login_url, data = identifiants)
 
-    url = 'https://www.pepal.eu/?my=notes'
+    url = 'grade page'
 
     result = session.get(url)
 
@@ -39,7 +39,7 @@ def cmb_note():
 notes_act = cmb_note()
 
 
-msg = "@everyone NOUVELLE NOTE DISPONIBLE SUR PEPAL "
+msg = "@everyone NOUVELLE NOTE DISPONIBLE SUR **** "
 
 @bot.event
 async def on_ready():
@@ -60,4 +60,4 @@ async def checkfornewnotes():
 
         
 
-bot.run('OTkwNTk0ODUyOTAxMjI0NDQ4.GM8H3k.PXiqheM7m5GL_1sXi2LlHGMsSppKDcPrMFyLzw')
+bot.run('bot token')
